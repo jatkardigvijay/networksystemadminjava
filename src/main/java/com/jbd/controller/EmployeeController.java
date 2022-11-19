@@ -33,6 +33,12 @@ public class EmployeeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(EmployeeController.class.getName());
 
+	@GetMapping("/message")
+	public String getMessage() {
+		
+		return "app deployed success";
+	}
+	
 	@Autowired
 	private EmployeeService employeeService;
 
